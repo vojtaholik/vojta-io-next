@@ -1,3 +1,7 @@
+type IconProps = {
+  className?: string
+}
+
 function Twitter() {
   const title = 'logo twitter'
 
@@ -62,4 +66,31 @@ function Email() {
   )
 }
 
-export {Twitter, Dribbble, Email}
+import React from 'react'
+
+function Sound({className}: IconProps) {
+  const title = 'sound'
+
+  return (
+    <svg
+      className={className}
+      height="16"
+      width="16"
+      viewBox="0 0 16 16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>{title}</title>
+      <g fill="currentColor">
+        <path d="M12.8,12.2c-0.4-0.4-0.4-1,0-1.4c1.6-1.6,1.6-4.1,0-5.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0 c2.3,2.3,2.3,6.1,0,8.5C13.9,12.6,13.2,12.6,12.8,12.2z" />
+        <path
+          d="M11,1c0-0.8-0.9-1.3-1.6-0.8L3.7,4H1C0.4,4,0,4.4,0,5v6c0,0.6,0.4,1,1,1h2.7l5.7,3.8c0.7,0.4,1.6,0,1.6-0.8 V1z"
+          fill="currentColor"
+        />
+      </g>
+    </svg>
+  )
+}
+
+export default Sound
+
+export {Twitter, Dribbble, Email, Sound}

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {Twitter, Dribbble, Email} from 'components/icons'
+import {Twitter, Dribbble, Email, Sound} from 'components/icons'
 import Image from 'next/image'
 import Layout from 'components/layout'
 import Me from '../../public/vojta-holik.jpg'
@@ -33,8 +33,23 @@ export default function Home() {
             </div>
             <div>
               <h1 className="text-2xl font-bold">
-                Hey, I'm Vojta{' '}
-                <span role="img" aria-label="wave">
+                Hey, I'm{' '}
+                <button
+                  type="button"
+                  title="say out loud"
+                  className="inline-flex font-bold items-center justify-center group transition-all ease-in-out duration-200"
+                  onClick={() => {
+                    let speech = new SpeechSynthesisUtterance()
+                    speech.lang = 'cs'
+                    speech.text = 'Vojta'
+                    window.speechSynthesis.speak(speech)
+                  }}
+                >
+                  Vojta{' '}
+                  <Sound className="ml-1 w-3 text-gray-200 group-hover:opacity-100 opacity-60" />
+                  <span className="sr-only">say out loud</span>
+                </button>
+                <span role="img" aria-label="wave" className="pl-2">
                   👋
                 </span>
               </h1>
