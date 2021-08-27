@@ -3,6 +3,7 @@ import {Twitter, Dribbble, Email, Sound} from 'components/icons'
 import Image from 'next/image'
 import Layout from 'components/layout'
 import Me from '../../public/vojta-holik.jpg'
+import * as ga from 'utils/ga'
 
 export default function Home() {
   return (
@@ -77,6 +78,14 @@ export default function Home() {
                 key={title}
                 rel="noopener noreferrer"
                 className="bg-black p-10 flex w-full items-center justify-center rounded-lg min-h-[200px] hover:scale-105 transition-all ease-in-out duration-200"
+                onClick={() => {
+                  ga.event({
+                    action: 'clicked project',
+                    params: {
+                      project: title,
+                    },
+                  })
+                }}
               >
                 <Image src={image} alt={title} quality={100} />
                 <span className="sr-only">{title}</span>
