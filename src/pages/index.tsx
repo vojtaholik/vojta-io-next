@@ -8,8 +8,11 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>@vjthlk</title>
-        <meta name="description" content="Digital Garden" />
+        <title>Vojta — designer and front-end developer</title>
+        <meta
+          name="description"
+          content="List of projects I've collaborated on in past ~year."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col  w-full max-w-screen-md mx-auto">
