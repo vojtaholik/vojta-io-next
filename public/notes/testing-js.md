@@ -1,0 +1,7 @@
+- Tips from Joel
+	- https://github.com/eggheadio/egghead-next/pull/792
+		- now we are just calling the new method and return the value. This doesn't functionally change our code, just means we can test without worrying about loading a note from a URL. we KNOW `fetch` works and testing that doesn't provide value to our local system. there are reasons to test this sort of thing, but for now, we can focus on our implementation and not be concerned with testing `fetch` integration. we'd say `parseMdxNotesFile` has been _isolated for testing_.
+	- components are hard to test
+	- test services and utility classes instead
+	- decide what to bring out from component to utility class
+	- test functions

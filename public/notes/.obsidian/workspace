@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "9b85fb1d4aa5abaf",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc7587832e09cb20",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "72583cab71012381",
+    "type": "split",
+    "children": [
+      {
+        "id": "97adebc45fcbd6d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "debcbfc47a7bd4ba",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d9ac928a8518dfd7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tools",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d68d6b2108eb03c2",
+    "type": "split",
+    "children": [
+      {
+        "id": "924eee4eed5dbd21",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "74bb84c144acbc3d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "dc7587832e09cb20",
+  "lastOpenFiles": [
+    "2021-08-09.md",
+    "dovolena.md",
+    "example.md",
+    "fitness.md",
+    "generative.md",
+    "kcd-bundle.md",
+    "hot-reloading.md",
+    "board-games.md",
+    "bryle.md",
+    "dum.md"
+  ]
+}

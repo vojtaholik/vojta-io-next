@@ -1,0 +1,4 @@
+- https://beta.turborepo.com/app/skill-recordings/dashboard
+- pnpm cypress-io/github-action https://github.com/FFdhorkin/github-action/blob/feature/pnpm-support/.github/workflows/example-basic-pnpm.yml
+- https://github.com/cypress-io/github-action/issues/145
+	- https://github.com/cypress-io/github-action/issues/145#issuecomment-884808726
