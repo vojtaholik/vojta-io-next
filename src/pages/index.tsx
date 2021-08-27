@@ -42,6 +42,10 @@ export default function Home() {
                     let speech = new SpeechSynthesisUtterance()
                     speech.lang = 'cs'
                     speech.text = 'Vojta'
+                    const voice = window.speechSynthesis
+                      .getVoices()
+                      .filter((voice) => voice.lang === 'cs-CZ')[0]
+                    speech.voice = voice
                     window.speechSynthesis.speak(speech)
                   }}
                 >
