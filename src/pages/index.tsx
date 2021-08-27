@@ -46,8 +46,10 @@ export default function Home() {
                   }}
                 >
                   Vojta{' '}
-                  <Sound className="ml-1 w-3 text-gray-200 group-hover:opacity-100 opacity-60" />
-                  <span className="sr-only">say out loud</span>
+                  <Sound
+                    aria-hidden="true"
+                    className="ml-1 w-3 text-gray-200 group-hover:opacity-100 opacity-60"
+                  />
                 </button>
                 <span role="img" aria-label="wave" className="pl-2">
                   👋
