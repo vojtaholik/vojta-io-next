@@ -28,6 +28,7 @@ export default function Home() {
                 className="rounded-full"
                 priority
                 loading="eager"
+                quality={100}
               />
             </div>
             <div>
@@ -56,7 +57,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="bg-black p-10 flex w-full items-center justify-center rounded-lg min-h-[200px] hover:scale-105 transition-all ease-in-out duration-200"
               >
-                <Image src={image} alt={title} />
+                <Image src={image} alt={title} quality={100} />
                 <span className="sr-only">{title}</span>
               </a>
             )
