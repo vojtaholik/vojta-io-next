@@ -51,7 +51,7 @@ export default function Home() {
                     className="ml-1 w-3 text-gray-200 group-hover:opacity-100 opacity-60"
                   />
                 </button>
-                <span role="img" aria-label="wave" className="pl-2">
+                <span role="img" aria-label="waving hand" className="pl-2">
                   👋
                 </span>
               </h1>
@@ -164,5 +164,15 @@ const projects = [
     title: 'GraphQLWorkshop.com',
     url: 'https://graphqlworkshop.com',
     image: require('../../public/projects/graphql-workshop/logo.svg'),
+  },
+  {
+    title: 'CompilersForHumans.com',
+    url: 'https://compilersforhumans.com',
+    image: require('../../public/projects/compilers-for-humans/logo.svg'),
+  },
+  {
+    title: 'RustAdventure.dev',
+    url: 'https://rustadventure.dev',
+    image: require('../../public/projects/rust-adventure/logo.svg'),
   },
 ]
