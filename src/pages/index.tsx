@@ -138,6 +138,11 @@ const projects = [
     image: require('../../public/projects/technical-interviews/logo.svg'),
   },
   {
+    title: 'EnterpriseJamstack.com',
+    url: 'https://enterprisejamstack.com',
+    image: require('../../public/projects/enterprise-jamstack/logo.svg'),
+  },
+  {
     title: 'GraphQLWorkshop.com',
     url: 'https://graphqlworkshop.com',
     image: require('../../public/projects/graphql-workshop/logo.svg'),
