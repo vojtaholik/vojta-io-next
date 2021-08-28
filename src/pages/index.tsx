@@ -78,30 +78,19 @@ export default function Home() {
                 key={title}
                 rel="noopener noreferrer"
                 className="bg-black p-10 flex w-full items-center justify-center rounded-lg min-h-[200px] hover:scale-105 transition-all ease-in-out duration-200"
-                // onClick={() => {
-                //   gtag.event({
-                //     action: 'submit_form',
-                //     category: 'Contact',
-                //     label: 'this is a label',
-                //   })
-                // }}
+                onClick={() => {
+                  gtag.event({
+                    action: 'clicked project',
+                    category: 'project',
+                    label: title,
+                  } as any)
+                }}
               >
                 <Image src={image} alt={title} quality={100} />
                 <span className="sr-only">{title}</span>
               </a>
             )
           })}
-          <button
-            onClick={() => {
-              gtag.event({
-                action: 'submit_form',
-                category: 'Contact',
-                label: 'this is a label',
-              } as any)
-            }}
-          >
-            Test!
-          </button>
         </main>
         <footer className="pt-24 pb-16 flex -m-1 items-center w-full justify-center">
           <a
