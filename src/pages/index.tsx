@@ -3,7 +3,7 @@ import {Twitter, Dribbble, Email, Sound} from 'components/icons'
 import Image from 'next/image'
 import Layout from 'components/layout'
 import Me from '../../public/vojta-holik.jpg'
-import * as ga from 'utils/ga'
+import * as gtag from 'utils/ga'
 
 export default function Home() {
   return (
@@ -78,20 +78,30 @@ export default function Home() {
                 key={title}
                 rel="noopener noreferrer"
                 className="bg-black p-10 flex w-full items-center justify-center rounded-lg min-h-[200px] hover:scale-105 transition-all ease-in-out duration-200"
-                onClick={() => {
-                  ga.event({
-                    action: 'clicked project',
-                    params: {
-                      project: title,
-                    },
-                  })
-                }}
+                // onClick={() => {
+                //   gtag.event({
+                //     action: 'submit_form',
+                //     category: 'Contact',
+                //     label: 'this is a label',
+                //   })
+                // }}
               >
                 <Image src={image} alt={title} quality={100} />
                 <span className="sr-only">{title}</span>
               </a>
             )
           })}
+          <button
+            onClick={() => {
+              gtag.event({
+                action: 'submit_form',
+                category: 'Contact',
+                label: 'this is a label',
+              } as any)
+            }}
+          >
+            Test!
+          </button>
         </main>
         <footer className="pt-24 pb-16 flex -m-1 items-center w-full justify-center">
           <a
