@@ -80,13 +80,13 @@ export default function Home() {
                 className="bg-black p-10 flex w-full items-center justify-center rounded-lg min-h-[200px] hover:scale-105 transition-all ease-in-out duration-200"
                 onClick={() => {
                   gtag.event({
-                    action: 'clicked project',
+                    action: 'clicked project url',
                     category: 'project',
                     label: title,
                   } as any)
                 }}
               >
-                <Image src={image} alt={title} quality={100} />
+                <img src={image} alt={title} />
                 <span className="sr-only">{title}</span>
               </a>
             )
@@ -98,6 +98,13 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="m-1 flex items-center justify-center space-x-2 rounded-lg bg-gray-200 bg-opacity-5 px-3 py-2 text-sm hover:bg-opacity-10 transition-all ease-in-out duration-200"
+            onClick={() => {
+              gtag.event({
+                action: 'clicked social button',
+                category: 'social',
+                label: 'twitter',
+              } as any)
+            }}
           >
             <Twitter />
             <span>Twitter</span>
@@ -107,6 +114,13 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="m-1 flex items-center justify-center space-x-2 rounded-lg bg-gray-200 bg-opacity-5 px-3 py-2 text-sm hover:bg-opacity-10 transition-all ease-in-out duration-200"
+            onClick={() => {
+              gtag.event({
+                action: 'clicked social button',
+                category: 'social',
+                label: 'dribbble',
+              } as any)
+            }}
           >
             <Dribbble />
             <span>Dribbble</span>
@@ -116,6 +130,13 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="m-1 flex items-center justify-center space-x-2 rounded-lg bg-gray-200 bg-opacity-5 px-3 py-2 text-sm hover:bg-opacity-10 transition-all ease-in-out duration-200"
+            onClick={() => {
+              gtag.event({
+                action: 'clicked social button',
+                category: 'social',
+                label: 'mail',
+              } as any)
+            }}
           >
             <Email />
             <span>Email</span>
@@ -130,61 +151,61 @@ const projects = [
   {
     title: 'JustJavaScript.com',
     url: 'https://justjavascript.com',
-    image: require('../../public/projects/just-javascript/logo.svg'),
+    image: '/projects/just-javascript/logo.svg',
   },
   {
     title: 'EpicReact.dev',
     url: 'https://epicreact.dev',
-    image: require('../../public/projects/epic-react/logo.svg'),
+    image: '/projects/epic-react/logo.svg',
   },
   {
     title: 'KeyboardLegend.dev',
     url: 'https://keyboardlegend.dev',
-    image: require('../../public/projects/keyboard-legend/logo.svg'),
+    image: '/projects/keyboard-legend/logo.svg',
   },
   {
     title: 'ScriptKit.com',
     url: 'https://scriptkit.com',
-    image: require('../../public/projects/script-kit/logo.svg'),
+    image: '/projects/script-kit/logo.svg',
   },
   {
     title: 'EngManagement.dev',
     url: 'https://engmanagement.dev',
-    image: require('../../public/projects/eng-management/logo.svg'),
+    image: '/projects/eng-management/logo.svg',
   },
   {
     title: 'egghead.io',
     url: 'https://egghead.io',
-    image: require('../../public/projects/egghead/logo.svg'),
+    image: '/projects/egghead/logo.svg',
   },
   {
     title: 'TestingAccessibility.com',
     url: 'https://testingaccessibility.com',
-    image: require('../../public/projects/testing-accessibility/logo.svg'),
+    image: '/projects/testing-accessibility/logo.svg',
   },
   {
     title: 'TechnicalInterviews.dev',
     url: 'https://technicalinterviews.dev',
-    image: require('../../public/projects/technical-interviews/logo.svg'),
+    image: '/projects/technical-interviews/logo.svg',
   },
   {
     title: 'EnterpriseJamstack.com',
     url: 'https://enterprisejamstack.com',
-    image: require('../../public/projects/enterprise-jamstack/logo.svg'),
+    image: '/projects/enterprise-jamstack/logo.svg',
   },
   {
     title: 'GraphQLWorkshop.com',
     url: 'https://graphqlworkshop.com',
-    image: require('../../public/projects/graphql-workshop/logo.svg'),
+    image: '/projects/graphql-workshop/logo.svg',
   },
   {
     title: 'CompilersForHumans.com',
     url: 'https://compilersforhumans.com',
-    image: require('../../public/projects/compilers-for-humans/logo.svg'),
+    image: '/projects/compilers-for-humans/logo.svg',
   },
   {
     title: 'RustAdventure.dev',
     url: 'https://rustadventure.dev',
-    image: require('../../public/projects/rust-adventure/logo.svg'),
+    image: '/projects/rust-adventure/logo.svg',
   },
 ]
