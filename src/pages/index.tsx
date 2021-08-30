@@ -171,7 +171,7 @@ const projects = [
   {
     title: 'EngManagement.dev',
     url: 'https://engmanagement.dev',
-    image: '/projects/eng-management/logo.svg',
+    image: '/projects/engineering-management/logo.svg',
   },
   {
     title: 'egghead.io',
