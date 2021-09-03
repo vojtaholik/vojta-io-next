@@ -10,21 +10,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@analytics/google-analytics": "^0.5.3",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
+    "analytics": "^0.7.14",
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
+    "memoizee": "^0.4.15",
     "next": "11.1.0",
     "next-mdx-remote": "^3.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "slugify": "^1.6.0",
     "unist-builder": "^3.0.0",
-    "unist-util-visit": "^2.0.3"
+    "unist-util-visit": "^2.0.3",
+    "use-analytics": "^0.0.5"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.171",
     "@types/mdast": "^3.0.7",
+    "@types/memoizee": "^0.4.6",
     "@types/react": "17.0.14",
     "autoprefixer": "^10.3.1",
     "eslint": "7.31.0",

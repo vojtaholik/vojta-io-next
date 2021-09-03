@@ -1,0 +1,62 @@
+[
+  {
+    "title": "JustJavaScript.com",
+    "url": "https://justjavascript.com",
+    "image": "/projects/just-javascript/logo.svg"
+  },
+  {
+    "title": "EpicReact.dev",
+    "url": "https://epicreact.dev",
+    "image": "/projects/epic-react/logo.svg"
+  },
+  {
+    "title": "KeyboardLegend.dev",
+    "url": "https://keyboardlegend.dev",
+    "image": "/projects/keyboard-legend/logo.svg"
+  },
+  {
+    "title": "ScriptKit.com",
+    "url": "https://scriptkit.com",
+    "image": "/projects/script-kit/logo.svg"
+  },
+  {
+    "title": "EngManagement.dev",
+    "url": "https://engmanagement.dev",
+    "image": "/projects/engineering-management/logo.svg"
+  },
+  {
+    "title": "egghead.io",
+    "url": "https://egghead.io",
+    "image": "/projects/egghead/logo.svg"
+  },
+  {
+    "title": "TestingAccessibility.com",
+    "url": "https://testingaccessibility.com",
+    "image": "/projects/testing-accessibility/logo.svg"
+  },
+  {
+    "title": "TechnicalInterviews.dev",
+    "url": "https://technicalinterviews.dev",
+    "image": "/projects/technical-interviews/logo.svg"
+  },
+  {
+    "title": "EnterpriseJamstack.com",
+    "url": "https://enterprisejamstack.com",
+    "image": "/projects/enterprise-jamstack/logo.svg"
+  },
+  {
+    "title": "GraphQLWorkshop.com",
+    "url": "https://graphqlworkshop.com",
+    "image": "/projects/graphql-workshop/logo.svg"
+  },
+  {
+    "title": "CompilersForHumans.com",
+    "url": "https://compilersforhumans.com",
+    "image": "/projects/compilers-for-humans/logo.svg"
+  },
+  {
+    "title": "RustAdventure.dev",
+    "url": "https://rustadventure.dev",
+    "image": "/projects/rust-adventure/logo.svg"
+  }
+]
