@@ -6,11 +6,12 @@ import Me from '../../public/vojta-holik.jpg'
 import {useAnalytics} from 'use-analytics'
 import {links} from 'components/bio'
 import {GetStaticPropsContext} from 'next'
-import {getProjects} from 'utils/get-projects'
-import type {Projects} from 'utils/get-projects'
+import {getProjects, Project} from 'utils/get-projects'
+// import {getGithubUser} from 'utils/get-github-user'
 
-export default function Home({projects}: Projects) {
+export default function Home({projects}: any) {
   const {track} = useAnalytics()
+
   return (
     <Layout>
       <Head>
@@ -21,7 +22,7 @@ export default function Home({projects}: Projects) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col  w-full max-w-screen-md mx-auto">
+      <div className="flex flex-col w-full max-w-screen-md mx-auto">
         <header className="py-24">
           <div className="flex space-x-4 items-center">
             <div className="flex items-center justify-center flex-shrink-0 sm:w-auto w-16 rounded-full overflow-hidden">
@@ -75,7 +76,7 @@ export default function Home({projects}: Projects) {
           Projects I've collaborated on in past ~year
         </h3>
         <main className="grid sm:grid-cols-2 grid-cols-1 gap-5 w-full">
-          {projects.map(({title, url, image}) => {
+          {projects.map(({title, url, image}: Project) => {
             return (
               <a
                 href={url}
@@ -97,7 +98,7 @@ export default function Home({projects}: Projects) {
             )
           })}
         </main>
-        <footer className="py-24 flex -m-1 items-center w-full justify-center">
+        <footer className="py-24 sm:flex grid grid-cols-2 -m-1 items-center w-full justify-center ">
           {links.map(({href, icon, label}) => (
             <a
               key={label}
@@ -125,9 +126,12 @@ export default function Home({projects}: Projects) {
 
 export async function getStaticProps(context: GetStaticPropsContext) {
   const projects = getProjects()
+  // const user = await getGithubUser()
+
   return {
     props: {
       projects,
+      // user,
     },
   }
 }
