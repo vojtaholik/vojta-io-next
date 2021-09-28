@@ -53,10 +53,5 @@
     "title": "CompilersForHumans.com",
     "url": "https://compilersforhumans.com",
     "image": "/projects/compilers-for-humans/logo.svg"
-  },
-  {
-    "title": "RustAdventure.dev",
-    "url": "https://rustadventure.dev",
-    "image": "/projects/rust-adventure/logo.svg"
   }
 ]
