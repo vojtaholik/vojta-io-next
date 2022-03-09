@@ -8,7 +8,6 @@ module.exports = {
     './src/components/**/*.tsx',
     './src/utils/**/*.ts',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
