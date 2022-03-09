@@ -52,7 +52,6 @@ export const getStaticProps: GetStaticProps = async () => {
   const notes = notesFilePaths.map((note) => {
     const source = fs.readFileSync(path.join(NOTES_PATH, note))
     const {content, data: frontmatter} = matter(source)
-    console.log({frontmatter})
     const isPublished =
       (frontmatter.tags && !isEmpty(frontmatter.tags)) || false
     if (!isPublished) {

@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -15,7 +19,12 @@
     "jsx": "preserve",
     "baseUrl": "./src/",
     "outDir": "dist",
-    "paths": {"public/*": ["../public/*"]}
+    "paths": {
+      "public/*": [
+        "../public/*"
+      ]
+    },
+    "incremental": true
   },
   "include": [
     "src",
@@ -24,5 +33,7 @@
     "**/*.tsx",
     "utils/remark-double-brackets.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
