@@ -1,2 +1,0 @@
-- https://en.m.wikipedia.org/wiki/Mariazell
-- https://www.dolni-rakousko.info/aktivni-pohyb-a-priroda

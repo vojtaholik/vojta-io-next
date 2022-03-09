@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {GetStaticProps} from 'next'
+import isEmpty from 'lodash/isEmpty'
 import fs from 'fs'
 import Link from 'next/link'
 import {notesFilePaths, NOTES_PATH} from '../../utils/mdx-utils'
@@ -19,6 +20,7 @@ const NotesIndex: React.FC<{notes: any}> = ({notes}) => {
                 (note: any) => !note?.frontmatter?.tags?.includes('draft'),
               )
               .map((note: any) => {
+                if (!note) return null
                 const slug = note.name.replace('.md', '')
 
                 return (
@@ -50,7 +52,14 @@ export const getStaticProps: GetStaticProps = async () => {
   const notes = notesFilePaths.map((note) => {
     const source = fs.readFileSync(path.join(NOTES_PATH, note))
     const {content, data: frontmatter} = matter(source)
-    return {name: note, frontmatter}
+    console.log({frontmatter})
+    const isPublished =
+      (frontmatter.tags && !isEmpty(frontmatter.tags)) || false
+    if (!isPublished) {
+      return null
+    } else {
+      return {name: note, frontmatter}
+    }
   })
 
   return {props: {notes}}

@@ -47,6 +47,7 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
   const noteFilePath = path.join(NOTES_PATH, `${params.slug}.md`)
   const source = fs.readFileSync(noteFilePath)
   const {content, data: frontmatter} = matter(source)
+
   const mdxSource = await serialize(content, {
     // components,
     mdxOptions: {

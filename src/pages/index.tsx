@@ -2,7 +2,7 @@ import Head from 'next/head'
 import {Sound} from 'components/icons'
 import Image from 'next/image'
 import Layout from 'components/layout'
-import Me from '../../public/vojta-holik.jpg'
+import Me from '../../public/vojta-holik-03-22.png'
 import {useAnalytics} from 'use-analytics'
 import {links} from 'components/bio'
 import {GetStaticPropsContext} from 'next'
@@ -18,7 +18,7 @@ export default function Home({projects}: any) {
         <title>Vojta — designer and front-end developer</title>
         <meta
           name="description"
-          content="See projects I've collaborated on in past ~year."
+          content="See projects I've collaborated on in the past ~year."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -73,7 +73,7 @@ export default function Home({projects}: any) {
           </div>
         </header>
         <h3 className="pb-4 font-medium">
-          Projects I've collaborated on in past ~year
+          Projects I've collaborated on in the past ~year
         </h3>
         <main className="grid sm:grid-cols-2 grid-cols-1 gap-5 w-full">
           {projects.map(({title, url, image}: Project) => {

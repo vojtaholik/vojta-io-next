@@ -17,7 +17,7 @@ Using Obsidian with [Sync](https://obsidian.md/sync) and [Obsidian Mobile](https
 ## Examples
 
 ### Double bracket links
-- [[hot-reloading]]
+- [[next-js]]
 - [[remark-plugins]]
 - [[dum]]
 

@@ -10,6 +10,11 @@
     "image": "/projects/epic-react/logo.svg"
   },
   {
+    "title": "TypeScriptCourse.com",
+    "url": "https://typescriptcourse.com",
+    "image": "/projects/typescript-course/logo.svg"
+  },
+  {
     "title": "KeyboardLegend.dev",
     "url": "https://keyboardlegend.dev",
     "image": "/projects/keyboard-legend/logo.svg"
