@@ -25,7 +25,7 @@ export default function Home({projects}: any) {
       <div className="flex flex-col w-full max-w-screen-md mx-auto">
         <header className="py-24">
           <div className="flex space-x-4 items-center">
-            <div className="flex items-center justify-center flex-shrink-0 sm:w-auto w-16 rounded-full overflow-hidden">
+            <div className="flex items-center justify-center flex-shrink-0 sm:w-auto w-16 rounded-full overflow-hidden border-2 border-black/50">
               <Image
                 src={Me}
                 alt="Vojta Holik"
@@ -72,8 +72,8 @@ export default function Home({projects}: any) {
             </div>
           </div>
         </header>
-        <h3 className="pb-4 font-medium">
-          Projects I've collaborated on in the past ~year
+        <h3 className="pb-4 text-gray-300">
+          Projects I've collaborated on in the past ~year:
         </h3>
         <main className="grid sm:grid-cols-2 grid-cols-1 gap-5 w-full">
           {projects.map(({title, url, image}: Project) => {
@@ -83,7 +83,7 @@ export default function Home({projects}: any) {
                 target="_blank"
                 key={title}
                 rel="noopener noreferrer"
-                className="bg-black p-10 flex w-full items-center justify-center rounded-lg min-h-[200px] hover:scale-105 transition-all ease-in-out duration-200"
+                className="bg-black bg-opacity-30 hover:bg-opacity-50 p-10 flex w-full items-center justify-center rounded-lg min-h-[200px] hover:scale-105 transition-all ease-in-out duration-200"
                 onClick={() => {
                   track('clicked project url', {
                     action: 'clicked project url',
