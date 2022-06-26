@@ -60,6 +60,12 @@
     "cursor": "/projects/typescript-course/cursor.svg"
   },
   {
+    "title": "egghead.io",
+    "url": "https://egghead.io",
+    "image": "/projects/egghead/logo.svg",
+    "cursor": "/projects/egghead/cursor.svg"
+  },
+  {
     "title": "KeyboardLegend.dev",
     "url": "https://keyboardlegend.dev",
     "image": "/projects/keyboard-legend/logo.svg",
@@ -76,12 +82,6 @@
     "url": "https://engmanagement.dev",
     "image": "/projects/engineering-management/logo.svg",
     "cursor": "/projects/engineering-management/cursor.svg"
-  },
-  {
-    "title": "egghead.io",
-    "url": "https://egghead.io",
-    "image": "/projects/egghead/logo.svg",
-    "cursor": "/projects/egghead/cursor.svg"
   },
   {
     "title": "EnterpriseJamstack.com",
