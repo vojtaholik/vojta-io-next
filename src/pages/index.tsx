@@ -1,18 +1,14 @@
 import Head from 'next/head'
-import {Sound} from 'components/icons'
-import Image from 'next/image'
-import Layout from 'components/layout'
-import Me from '../../public/vojta-holik-03-22.png'
-import {useAnalytics} from 'use-analytics'
-import {links} from 'components/bio'
+import {getProjects, Project} from 'lib/get-projects'
 import {GetStaticPropsContext} from 'next'
-import {getProjects, Project} from 'utils/get-projects'
-import {find, get} from 'lodash'
-// import {getGithubUser} from 'utils/get-github-user'
+import {Sound} from 'components/icons'
+import {links} from 'components/bio'
+import Me from '../../public/vojta-holik-03-22.png'
+import Layout from 'components/layout'
+import Image from 'next/image'
+import find from 'lodash/find'
 
 export default function Home({projects}: any) {
-  const {track} = useAnalytics()
-
   return (
     <Layout>
       <Head>
@@ -90,13 +86,6 @@ export default function Home({projects}: any) {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => {
-                    track('clicked project url', {
-                      action: 'clicked project url',
-                      category: 'project',
-                      label: title,
-                    })
-                  }}
                 >
                   <img src={image} alt={title} />
                   <span className="sr-only">{title}</span>
@@ -107,13 +96,6 @@ export default function Home({projects}: any) {
                     href={caseStudy.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => {
-                      track('clicked project case study', {
-                        action: 'clicked project case study',
-                        category: 'case study',
-                        label: title,
-                      })
-                    }}
                   >
                     Case study <span aria-hidden="true">↗︎</span>
                   </a>
@@ -130,13 +112,6 @@ export default function Home({projects}: any) {
               target="_blank"
               rel="noopener noreferrer"
               className="m-1 flex items-center justify-center space-x-2 rounded-lg bg-gray-200 bg-opacity-5 px-3 py-2 text-sm hover:bg-opacity-10 transition-all ease-in-out duration-200"
-              onClick={() => {
-                track('clicked social link', {
-                  action: 'clicked social link',
-                  category: 'social',
-                  label,
-                })
-              }}
             >
               {icon}
               <span>{label}</span>
@@ -150,12 +125,10 @@ export default function Home({projects}: any) {
 
 export async function getStaticProps(context: GetStaticPropsContext) {
   const projects = getProjects()
-  // const user = await getGithubUser()
 
   return {
     props: {
       projects,
-      // user,
     },
   }
 }

@@ -36,3 +36,4 @@ eslint --fix . --ignore-path ./.gitignore
 
 # obsidian
 /notes/.obsidian
+/public/notes
