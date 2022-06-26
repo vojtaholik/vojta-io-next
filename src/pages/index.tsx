@@ -7,6 +7,7 @@ import {useAnalytics} from 'use-analytics'
 import {links} from 'components/bio'
 import {GetStaticPropsContext} from 'next'
 import {getProjects, Project} from 'utils/get-projects'
+import {find, get} from 'lodash'
 // import {getGithubUser} from 'utils/get-github-user'
 
 export default function Home({projects}: any) {
@@ -76,25 +77,48 @@ export default function Home({projects}: any) {
           Projects I've collaborated on in the past ~year:
         </h3>
         <main className="grid sm:grid-cols-2 grid-cols-1 gap-5 w-full">
-          {projects.map(({title, url, image}: Project) => {
+          {projects.map(({title, url, image, links, cursor}: Project) => {
+            const caseStudy = find(links, {label: 'Case study'})
             return (
-              <a
-                href={url}
-                target="_blank"
+              <div
                 key={title}
-                rel="noopener noreferrer"
-                className="bg-black bg-opacity-30 hover:bg-opacity-50 p-10 flex w-full items-center justify-center rounded-lg min-h-[200px] hover:scale-105 transition-all ease-in-out duration-200"
-                onClick={() => {
-                  track('clicked project url', {
-                    action: 'clicked project url',
-                    category: 'project',
-                    label: title,
-                  })
-                }}
+                className="overflow-hidden bg-black bg-opacity-30 hover:bg-opacity-50 flex w-full items-center flex-col justify-between rounded-lg min-h-[200px] hover:scale-105 transition-all ease-in-out duration-200"
               >
-                <img src={image} alt={title} />
-                <span className="sr-only">{title}</span>
-              </a>
+                <a
+                  className="flex items-center justify-center flex-grow p-16 w-full"
+                  style={{cursor: `url(${cursor}), pointer`}}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => {
+                    track('clicked project url', {
+                      action: 'clicked project url',
+                      category: 'project',
+                      label: title,
+                    })
+                  }}
+                >
+                  <img src={image} alt={title} />
+                  <span className="sr-only">{title}</span>
+                </a>
+                {caseStudy && (
+                  <a
+                    className="w-full border-t text-white/80 hover:text-white border-gray-900 hover:bg-gray-800/60 font-mono text-xs uppercase p-5 text-center"
+                    href={caseStudy.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      track('clicked project case study', {
+                        action: 'clicked project case study',
+                        category: 'case study',
+                        label: title,
+                      })
+                    }}
+                  >
+                    Case study <span aria-hidden="true">↗︎</span>
+                  </a>
+                )}
+              </div>
             )
           })}
         </main>

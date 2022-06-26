@@ -2,66 +2,97 @@
   {
     "title": "JustJavaScript.com",
     "url": "https://justjavascript.com",
-    "image": "/projects/just-javascript/logo.svg"
+    "image": "/projects/just-javascript/logo.svg",
+    "cursor": "/projects/just-javascript/cursor.svg",
+    "links": [
+      {
+        "label": "Case study",
+        "url": "https://www.skillrecordings.com/just-javascript"
+      }
+    ]
   },
   {
     "title": "EpicReact.dev",
     "url": "https://epicreact.dev",
-    "image": "/projects/epic-react/logo.svg"
-  },
-  {
-    "title": "TypeScriptCourse.com",
-    "url": "https://typescriptcourse.com",
-    "image": "/projects/typescript-course/logo.svg"
-  },
-  {
-    "title": "KeyboardLegend.dev",
-    "url": "https://keyboardlegend.dev",
-    "image": "/projects/keyboard-legend/logo.svg"
-  },
-  {
-    "title": "CSSDestructured.com",
-    "url": "https://cssdestructured.com",
-    "image": "/projects/css-destructured/logo.svg"
-  },
-  {
-    "title": "ScriptKit.com",
-    "url": "https://scriptkit.com",
-    "image": "/projects/script-kit/logo.svg"
-  },
-  {
-    "title": "EngManagement.dev",
-    "url": "https://engmanagement.dev",
-    "image": "/projects/engineering-management/logo.svg"
-  },
-  {
-    "title": "egghead.io",
-    "url": "https://egghead.io",
-    "image": "/projects/egghead/logo.svg"
+    "image": "/projects/epic-react/logo.svg",
+    "cursor": "/projects/epic-react/cursor.svg",
+    "links": [
+      {
+        "label": "Case study",
+        "url": "https://www.skillrecordings.com/epic-react"
+      }
+    ]
   },
   {
     "title": "TestingAccessibility.com",
     "url": "https://testingaccessibility.com",
-    "image": "/projects/testing-accessibility/logo.svg"
+    "image": "/projects/testing-accessibility/logo.svg",
+    "cursor": "/projects/testing-accessibility/cursor.svg"
   },
   {
     "title": "TechnicalInterviews.dev",
     "url": "https://technicalinterviews.dev",
-    "image": "/projects/technical-interviews/logo.svg"
+    "image": "/projects/technical-interviews/logo.svg",
+    "cursor": "/projects/technical-interviews/cursor.svg",
+    "links": [
+      {
+        "label": "Case study",
+        "url": "https://www.skillrecordings.com/technical-interviews"
+      }
+    ]
+  },
+  {
+    "title": "ScriptKit.com",
+    "url": "https://scriptkit.com",
+    "image": "/projects/script-kit/logo.svg",
+    "cursor": "/projects/script-kit/cursor.svg"
+  },
+  {
+    "title": "TypeScriptCourse.com",
+    "url": "https://typescriptcourse.com",
+    "image": "/projects/typescript-course/logo.svg",
+    "cursor": "/projects/typescript-course/cursor.svg"
+  },
+  {
+    "title": "KeyboardLegend.dev",
+    "url": "https://keyboardlegend.dev",
+    "image": "/projects/keyboard-legend/logo.svg",
+    "cursor": "/projects/keyboard-legend/cursor.svg"
+  },
+  {
+    "title": "CSSDestructured.com",
+    "url": "https://cssdestructured.com",
+    "image": "/projects/css-destructured/logo.svg",
+    "cursor": "/projects/css-destructured/cursor.svg"
+  },
+  {
+    "title": "EngManagement.dev",
+    "url": "https://engmanagement.dev",
+    "image": "/projects/engineering-management/logo.svg",
+    "cursor": "/projects/engineering-management/cursor.svg"
+  },
+  {
+    "title": "egghead.io",
+    "url": "https://egghead.io",
+    "image": "/projects/egghead/logo.svg",
+    "cursor": "/projects/egghead/cursor.svg"
   },
   {
     "title": "EnterpriseJamstack.com",
     "url": "https://enterprisejamstack.com",
-    "image": "/projects/enterprise-jamstack/logo.svg"
+    "image": "/projects/enterprise-jamstack/logo.svg",
+    "cursor": "/projects/enterprise-jamstack/cursor.svg"
   },
   {
     "title": "GraphQLWorkshop.com",
     "url": "https://graphqlworkshop.com",
-    "image": "/projects/graphql-workshop/logo.svg"
+    "image": "/projects/graphql-workshop/logo.svg",
+    "cursor": "/projects/graphql-workshop/cursor.svg"
   },
   {
     "title": "CompilersForHumans.com",
     "url": "https://compilersforhumans.com",
-    "image": "/projects/compilers-for-humans/logo.svg"
+    "image": "/projects/compilers-for-humans/logo.svg",
+    "cursor": "/projects/compilers-for-humans/cursor.svg"
   }
 ]
