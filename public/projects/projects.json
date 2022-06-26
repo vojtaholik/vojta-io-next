@@ -48,6 +48,12 @@
     "cursor": "/projects/script-kit/cursor.svg"
   },
   {
+    "title": "ProTailwind.com",
+    "url": "https://protailwind.com",
+    "image": "/projects/pro-tailwind/logo.svg",
+    "cursor": "/projects/pro-tailwind/cursor.svg"
+  },
+  {
     "title": "TypeScriptCourse.com",
     "url": "https://typescriptcourse.com",
     "image": "/projects/typescript-course/logo.svg",
