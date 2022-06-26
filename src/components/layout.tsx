@@ -1,6 +1,11 @@
 import * as React from 'react'
 
-const Layout: React.FC<{className?: string}> = ({children, className = ''}) => {
+type LayoutProps = {
+  children?: React.ReactNode
+  className?: string
+}
+
+const Layout: React.FC<LayoutProps> = ({children, className = ''}) => {
   return (
     <div className={`px-5 min-h-screen flex w-full ${className}`}>
       {children}

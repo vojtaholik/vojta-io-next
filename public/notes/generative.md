@@ -4,6 +4,14 @@ date: '2021-07-21'
 tags: ['starred']
 ---
 
+### algebra functiona
+
+- https://github.com/neefrehman/generative/tree/master/src/sketches/utils
+- https://twitter.com/ggsimm/status/1454024781645369345?s=21
+- 
+
+
+### tools
 - [https://tabbied.com](https://tabbied.com)
 - [https://www.smashingmagazine.com/2021/03/svg-generators/](https://www.smashingmagazine.com/2021/03/svg-generators/)
 - [https://drawingbots.net/resources](https://drawingbots.net/resources)
