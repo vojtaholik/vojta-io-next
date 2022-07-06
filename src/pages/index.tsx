@@ -12,11 +12,6 @@ export default function Home({projects}: any) {
   return (
     <Layout>
       <Head>
-        <title>Vojta — designer and front-end developer</title>
-        <meta
-          name="description"
-          content="See projects I've collaborated on in the past ~year."
-        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col w-full max-w-screen-md mx-auto">
