@@ -10,7 +10,7 @@ import find from 'lodash/find'
 
 export default function Home({projects}: any) {
   return (
-    <Layout>
+    <Layout meta={{titleAppendSiteName: false}}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
