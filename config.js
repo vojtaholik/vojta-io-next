@@ -1,19 +1,57 @@
 export default {
-  defaultTitle: 'Vojta — designer and front-end developer',
-  description: `Vojta Holik is a web designer, creative helper, and front-end developer from Czech Republic.`,
+  title: 'Vojta — designer and front-end developer',
+  description:
+    'Vojta Holik is a web designer, creative helper, and front-end developer from Czech Republic.',
+  additionalLinkTags: [
+    {
+      rel: 'icon',
+      href: 'https://vojta.io/favicon.ico',
+    },
+  ],
+  additionalMetaTags: [
+    {property: 'author', content: 'Vojta Holik'},
+    {
+      property: 'keywords',
+      content: 'design, development, remote, egghead',
+    },
+  ],
+  twitter: {
+    cardType: 'summary_large_image',
+    handle: '@vjthlk',
+  },
   openGraph: {
     type: 'website',
-    url: 'https://www.vojta.io/',
     site_name: 'Vojta Holik',
+    profile: {
+      firstName: 'Vojta',
+      lastName: 'Holik',
+    },
     images: [
       {
         url: 'https://vojta.io/card@2x.png',
+        width: 1280,
+        height: 720,
       },
     ],
   },
-  twitter: {
-    handle: '@vjthlk',
-    site: '@vjthlk',
-    cardType: 'summary_large_image',
-  },
 }
+
+// export default {
+//   defaultTitle: 'Vojta — designer and front-end developer',
+//   description: `Vojta Holik is a web designer, creative helper, and front-end developer from Czech Republic.`,
+//   openGraph: {
+//     type: 'website',
+//     url: 'https://www.vojta.io/',
+//     site_name: 'Vojta Holik',
+//     images: [
+//       {
+//         url: 'https://vojta.io/card@2x.png',
+//       },
+//     ],
+//   },
+//   twitter: {
+//     handle: '@vjthlk',
+//     site: '@vjthlk',
+//     cardType: 'summary_large_image',
+//   },
+// }
