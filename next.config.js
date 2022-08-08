@@ -1,4 +1,5 @@
 const withPlugins = require('next-compose-plugins')
+const withMDX = require('@next/mdx')()
 
 module.exports = {
   reactStrictMode: true,
@@ -16,4 +17,14 @@ const nextConfig = {
   },
 }
 
-module.exports = withPlugins([], nextConfig)
+module.exports = withPlugins(
+  [
+    withMDX({
+      options: {
+        providerImportSource: '@mdx-js/react',
+      },
+      pageExtensions: ['ts', 'tsx', 'mdx'],
+    }),
+  ],
+  nextConfig,
+)

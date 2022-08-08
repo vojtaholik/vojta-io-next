@@ -10,6 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.1.2",
+    "@mdx-js/react": "^2.1.2",
+    "@next/mdx": "^12.2.4",
     "@prisma/client": "^3.15.2",
     "@tailwindcss/typography": "^0.5.2",
     "gray-matter": "^4.0.3",
@@ -28,6 +31,7 @@
   "devDependencies": {
     "@types/lodash": "^4.14.182",
     "@types/mdast": "^3.0.10",
+    "@types/mdx": "^2.0.2",
     "@types/memoizee": "^0.4.8",
     "@types/node": "^18.0.0",
     "@types/react": "18.0.14",
