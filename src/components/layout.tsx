@@ -28,7 +28,7 @@ const Layout: React.FC<LayoutProps> = ({
       <NextSeo
         title={title}
         description={description}
-        titleTemplate={titleAppendSiteName ? `%s | Pro Tailwind` : undefined}
+        titleTemplate={titleAppendSiteName ? `%s | Vojta.io` : undefined}
         openGraph={{
           title,
           description,
