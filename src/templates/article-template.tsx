@@ -12,7 +12,7 @@ const ArticleTemplate: React.FC<React.PropsWithChildren<ArticleProps>> = ({
   return (
     <Layout meta={{title}}>
       <main className="flex items-center justify-center mx-auto w-full py-16">
-        <article className="prose mx-auto w-full prose-a:underline prose-a:underline-offset-1">
+        <article className="prose mx-auto w-full prose-a:underline prose-a:underline-offset-1 prose-a:text-gray-200 prose-a:decoration-slate-600 hover:prose-a:decoration-slate-400">
           {children}
         </article>
       </main>
