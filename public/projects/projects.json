@@ -1,5 +1,11 @@
 [
   {
+    "title": "TotalTypescript.com",
+    "url": "https://totaltypescript.com",
+    "image": "/projects/total-typescript/logo.svg",
+    "cursor": "/projects/total-typescript/cursor.svg"
+  },
+  {
     "title": "JustJavaScript.com",
     "url": "https://justjavascript.com",
     "image": "/projects/just-javascript/logo.svg",
