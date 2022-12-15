@@ -100,11 +100,5 @@
     "url": "https://graphqlworkshop.com",
     "image": "/projects/graphql-workshop/logo.svg",
     "cursor": "/projects/graphql-workshop/cursor.svg"
-  },
-  {
-    "title": "CompilersForHumans.com",
-    "url": "https://compilersforhumans.com",
-    "image": "/projects/compilers-for-humans/logo.svg",
-    "cursor": "/projects/compilers-for-humans/cursor.svg"
   }
 ]
