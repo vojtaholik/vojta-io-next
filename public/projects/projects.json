@@ -6,6 +6,12 @@
     "cursor": "/projects/total-typescript/cursor.svg"
   },
   {
+    "title": "TestingAccessibility.com",
+    "url": "https://testingaccessibility.com",
+    "image": "/projects/testing-accessibility/logo.svg",
+    "cursor": "/projects/testing-accessibility/cursor.svg"
+  },
+  {
     "title": "JustJavaScript.com",
     "url": "https://justjavascript.com",
     "image": "/projects/just-javascript/logo.svg",
@@ -28,12 +34,6 @@
         "url": "https://www.skillrecordings.com/epic-react"
       }
     ]
-  },
-  {
-    "title": "TestingAccessibility.com",
-    "url": "https://testingaccessibility.com",
-    "image": "/projects/testing-accessibility/logo.svg",
-    "cursor": "/projects/testing-accessibility/cursor.svg"
   },
   {
     "title": "TechnicalInterviews.dev",
