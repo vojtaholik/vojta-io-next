@@ -5,7 +5,7 @@ const TestPage = () => {
         src="https://epicweb.dev/tutorials/deploy-web-applications/project-setup-and-first-deployment/signing-up-for-fly-io/embed"
         className="aspect-video"
         referrerPolicy="unsafe-url"
-        sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-top-navigation allow-storage-access-by-user-activation"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-top-navigation"
       />
       <iframe
         src="https://www.epicweb.dev/tutorials/deploy-web-applications/project-setup-and-first-deployment/intro-to-deploy-distributed-apps-with-node-js-and-fly/embed"
