@@ -16,6 +16,9 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
       noIndex
       meta={{
         title: shot.public_id,
+        ogImage: {
+          url: shot.secure_url,
+        },
       }}
     >
       <main className="flex items-center justify-center flex-col w-full h-screen p-16">
