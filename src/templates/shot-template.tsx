@@ -23,7 +23,16 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
       }}
     >
       <main className="flex items-center justify-center flex-col w-full h-screen p-16">
-        {shot && (
+        {shot.resource_type === 'video' ? (
+          <video
+            src={shot.secure_url}
+            controls
+            className={`aspect-[${calculateAspectRatio(
+              shot.width,
+              shot.height,
+            )}] h-full w-full`}
+          />
+        ) : (
           <Image
             className={`aspect-[${calculateAspectRatio(
               shot.width,
