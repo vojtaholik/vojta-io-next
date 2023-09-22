@@ -15,7 +15,8 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
       className="bg-black"
       noIndex
       meta={{
-        title: shot.public_id,
+        title: 'screenshot',
+        description: '',
         ogImage: {
           url: shot.secure_url,
         },
