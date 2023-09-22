@@ -18,6 +18,7 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
       meta={{
         title: 'screenshot',
         description: ' ',
+        hasOgImage: false,
         // ogImage: {
         //   url: shot.secure_url,
         // },

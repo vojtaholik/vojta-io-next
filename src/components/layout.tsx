@@ -20,6 +20,7 @@ const Layout: React.FC<LayoutProps> = ({
     titleAppendSiteName = true,
     url,
     type = 'website',
+    hasOgImage = true,
     ogImage = {
       url: 'https://vojta.io/card@2x.png',
       width: 1280,
@@ -38,7 +39,7 @@ const Layout: React.FC<LayoutProps> = ({
           description,
           type,
           url,
-          images: ogImage ? [ogImage] : undefined,
+          images: hasOgImage ? [ogImage] : undefined,
           article: {
             publishedTime: date,
           },
