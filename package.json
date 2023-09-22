@@ -13,6 +13,8 @@
     "@mdx-js/react": "^2.3.0",
     "@next/mdx": "^13.5.2",
     "@tailwindcss/typography": "^0.5.10",
+    "cloudinary": "^1.40.0",
+    "cloudinary-build-url": "^0.2.4",
     "lodash": "^4.17.21",
     "memoizee": "^0.4.15",
     "next": "13.5.2",
