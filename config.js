@@ -15,10 +15,6 @@ export default {
       content: 'design, development, remote, egghead',
     },
   ],
-  twitter: {
-    cardType: 'summary_large_image',
-    handle: '@vjthlk',
-  },
   openGraph: {
     type: 'website',
     site_name: 'Vojta Holik',

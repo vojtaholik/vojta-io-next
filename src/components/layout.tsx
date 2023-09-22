@@ -44,6 +44,10 @@ const Layout: React.FC<LayoutProps> = ({
             publishedTime: date,
           },
         }}
+        twitter={{
+          cardType: hasOgImage ? 'summary_large_image' : undefined,
+          handle: '@vjthlk',
+        }}
         canonical={url}
         noindex={noIndex}
       />
