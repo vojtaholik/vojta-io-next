@@ -20,7 +20,11 @@ const Layout: React.FC<LayoutProps> = ({
     titleAppendSiteName = true,
     url,
     type = 'website',
-    ogImage,
+    ogImage = {
+      url: 'https://vojta.io/card@2x.png',
+      width: 1280,
+      height: 720,
+    },
     date,
   } = meta || {}
   return (

@@ -17,10 +17,11 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
       noIndex
       meta={{
         title: 'screenshot',
-        description: '',
-        ogImage: {
-          url: shot.secure_url,
-        },
+        description: ' ',
+        // ogImage: {
+        //   url: shot.secure_url,
+        // },
+        titleAppendSiteName: false,
       }}
     >
       <main className="flex items-center justify-center flex-col w-full h-screen p-16">
@@ -35,22 +36,31 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
               )}] h-full w-full`}
             />
             <Head>
-              <meta property="og:video" content={shot.secure_url} />
+              <meta
+                property="og:video"
+                content={shot.secure_url.replace('.mov', '.mp4')}
+              />
               <meta property="og:type" content="video.movie" />
               <meta property="og:video:type" content="video/mp4" />
             </Head>
           </>
         ) : (
-          <Image
-            className={`aspect-[${calculateAspectRatio(
-              shot.width,
-              shot.height,
-            )}] max-w-[70vw] w-full`}
-            src={shot.secure_url}
-            width={shot.width}
-            height={shot.height}
-            alt="screenshot"
-          />
+          <>
+            <Image
+              className={`aspect-[${calculateAspectRatio(
+                shot.width,
+                shot.height,
+              )}] max-w-[70vw] w-full`}
+              src={shot.secure_url}
+              width={shot.width}
+              height={shot.height}
+              alt="screenshot"
+            />
+            <Head>
+              <meta property="og:image" content={shot.secure_url} />
+              <meta property="twitter:image" content={shot.secure_url} />
+            </Head>
+          </>
         )}
       </main>
     </Layout>

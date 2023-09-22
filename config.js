@@ -26,12 +26,12 @@ export default {
       firstName: 'Vojta',
       lastName: 'Holik',
     },
-    images: [
-      {
-        url: 'https://vojta.io/card@2x.png',
-        width: 1280,
-        height: 720,
-      },
-    ],
+    // images: [
+    //   {
+    //     url: 'https://vojta.io/card@2x.png',
+    //     width: 1280,
+    //     height: 720,
+    //   },
+    // ],
   },
 }
