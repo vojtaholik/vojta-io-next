@@ -1,6 +1,0 @@
-- https://neubauladen.com/product/nb-akademie-edition/
-- Vultype Co. https://befonts.com/designer/vultype-co
-- https://typefactory.co/product-category/serif/ (great price and licensing)
-- https://fontsarena.com/ great licensing
-- code/javascript fonts https://fontsarena.com/leon-sans-by-jongmin-kim/
-- 

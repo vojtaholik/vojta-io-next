@@ -1,13 +1,21 @@
-const withPlugins = require('next-compose-plugins')
-const withMDX = require('@next/mdx')()
+/** @type {import('next').NextConfig} */
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+  options: {
+    providerImportSource: '@mdx-js/react',
+  },
+})
 
-module.exports = {
-  reactStrictMode: true,
-}
+const IMAGE_HOST_DOMAINS = [`res.cloudinary.com`]
 
-const IMAGE_HOST_DOMAINS = []
-
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  eslint: {ignoreDuringBuilds: true},
+  experimental: {scrollRestoration: true, mdxRs: true},
+  productionBrowserSourceMaps: true,
   reactStrictMode: true,
   images: {
     domains: IMAGE_HOST_DOMAINS,
@@ -17,14 +25,6 @@ const nextConfig = {
   },
 }
 
-module.exports = withPlugins(
-  [
-    withMDX({
-      options: {
-        providerImportSource: '@mdx-js/react',
-      },
-      pageExtensions: ['ts', 'tsx', 'mdx'],
-    }),
-  ],
-  nextConfig,
-)
+const configWithPlugins = withMDX(nextConfig)
+
+module.exports = configWithPlugins

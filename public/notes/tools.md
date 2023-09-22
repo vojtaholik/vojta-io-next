@@ -1,3 +1,0 @@
-- https://rive.app/ ^d46631
-- https://realfavicongenerator.net/
-- https://cavalry.scenegroup.co/
