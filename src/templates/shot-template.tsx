@@ -18,6 +18,7 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
       meta={{
         title: 'screenshot',
         description: ' ',
+        type: shot.resource_type === 'video' ? 'video.movie' : 'website',
         hasOgImage: false,
         // ogImage: {
         //   url: shot.secure_url,
@@ -41,7 +42,10 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
                 property="og:video"
                 content={shot.secure_url.replace('.mov', '.mp4')}
               />
-              <meta property="og:type" content="video.movie" />
+              <meta
+                property="og:url"
+                content={shot.secure_url.replace('.mov', '.mp4')}
+              />
               <meta property="og:video:type" content="video/mp4" />
             </Head>
           </>
