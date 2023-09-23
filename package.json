@@ -19,6 +19,7 @@
     "memoizee": "^0.4.15",
     "next": "13.5.2",
     "next-seo": "^6.1.0",
+    "node-mailjet": "^6.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "slugify": "^1.6.6"
