@@ -42,10 +42,10 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
                 property="og:video"
                 content={shot.secure_url.replace('.mov', '.mp4')}
               />
-              <meta
+              {/* <meta
                 property="og:url"
                 content={shot.secure_url.replace('.mov', '.mp4')}
-              />
+              /> */}
               <meta property="og:video:type" content="video/mp4" />
             </Head>
           </>
