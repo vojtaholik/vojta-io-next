@@ -6,6 +6,7 @@ import path from 'path'
 import ShotTemplate from 'templates/shot-template'
 import {CloudinaryAsset} from 'types'
 import fs from 'fs'
+import {kv} from '@vercel/kv'
 
 type Props = {
   shot: CloudinaryAsset
@@ -20,7 +21,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const {public_id} = context.query
 
   const shot = await getShot(public_id as string)
-  const visitCount = await fetchVisitCount(public_id as string)
+  const visits = await fetchVisits()
+  const visitCount = (visits && visits[public_id as string]) || 0
 
   return {
     props: {
@@ -33,16 +35,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   }
 }
 
-const fetchVisitCount = async (publicId: string) => {
-  try {
-    const filePath = path.join(process.cwd(), 'shotVisits.json')
-    const rawData = fs.readFileSync(filePath, 'utf-8')
-    const pageVisits = JSON.parse(rawData) || {} // Provide an empty object as a default if the JSON is empty.
-    const visitCount = pageVisits[`screenshots/${publicId}`] || 0
-
-    return visitCount
-  } catch (error) {
-    console.error(error)
-    return 0 // Default to 0 visits on error.
-  }
+const fetchVisits = async () => {
+  const visits = await kv.hgetall('shot:visits')
+  return visits
 }
