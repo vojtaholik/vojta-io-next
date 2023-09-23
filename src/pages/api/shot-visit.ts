@@ -16,7 +16,7 @@ export default async function handler(
       // Read the current visit count.
       const fs = require('fs')
       const path = require('path')
-      const filePath = path.join(process.cwd(), 'public', 'shotVisits.json')
+      const filePath = path.join(process.cwd(), 'shotVisits.json')
       const rawData = fs.readFileSync(filePath)
       const shotVisits = JSON.parse(rawData)
 

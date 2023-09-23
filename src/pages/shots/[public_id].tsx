@@ -35,7 +35,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
 const fetchVisitCount = async (publicId: string) => {
   try {
-    const filePath = path.join(process.cwd(), 'public', 'shotVisits.json')
+    const filePath = path.join(process.cwd(), 'shotVisits.json')
     const rawData = fs.readFileSync(filePath, 'utf-8')
     const pageVisits = JSON.parse(rawData) || {} // Provide an empty object as a default if the JSON is empty.
     const visitCount = pageVisits[`screenshots/${publicId}`] || 0
