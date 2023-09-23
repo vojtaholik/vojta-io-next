@@ -3,7 +3,6 @@ import Layout from 'components/layout'
 import Image from 'next/image'
 import {CloudinaryAsset} from 'types'
 import Head from 'next/head'
-// import {mailjet} from 'utils/mailjet'
 
 type TemplateProps = {
   shot: CloudinaryAsset
@@ -114,26 +113,4 @@ const incrementPageVisits = async (publicId: string) => {
     // Handle network or other errors.
     console.error(error)
   }
-}
-
-const sendEmail = async () => {
-  // send email to me using mailjet
-
-  const request = mailjet.post('send', {version: 'v3.1'}).request({
-    Messages: [
-      {
-        From: {
-          Email: 'vojta@8am.design',
-        },
-        To: [
-          {
-            Email: 'vojta@egghead.io',
-          },
-        ],
-        Subject: 'screenshot viewed',
-        TextPart: 'screenshot viewed',
-        HTMLPart: '<h3>screenshot viewed</h3>',
-      },
-    ],
-  })
 }
