@@ -2,6 +2,34 @@ type IconProps = {
   className?: string
 }
 
+function X() {
+  const title = 'logo X (formerly Twitter)'
+
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>{title}</title>
+      <path
+        d="M7.22852 10.1009L2.93802 14.9999H0.561523L6.11852 8.65186L7.22852 10.1009Z"
+        fill="currentColor"
+      />
+      <path
+        d="M8.52563 5.494L12.4541 1H14.8291L9.62563 6.951L8.52563 5.494Z"
+        fill="currentColor"
+      />
+      <path
+        d="M15.7441 15H10.9646L0.256104 1H5.1566L15.7441 15ZM11.6201 13.5785H12.9361L4.4416 2.347H3.0296L11.6201 13.5785Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}
+
 function Twitter() {
   const title = 'logo twitter'
 
@@ -111,4 +139,4 @@ function GitHub({className}: IconProps) {
   )
 }
 
-export {Twitter, Dribbble, Email, Sound, GitHub}
+export {Twitter, Dribbble, Email, Sound, GitHub, X}

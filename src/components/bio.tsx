@@ -1,9 +1,9 @@
-import {Dribbble, Email, Twitter, GitHub} from './icons'
+import {Dribbble, Email, X, GitHub} from './icons'
 
 const links = [
   {
-    href: 'https://twitter.com/vjthlk',
-    icon: <Twitter />,
+    href: 'https://x.com/vojta_holik',
+    icon: <X />,
     label: 'Twitter',
   },
   {
