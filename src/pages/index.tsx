@@ -7,6 +7,7 @@ import Me from '../../public/vojta-holik-06-23.jpg'
 import Layout from 'components/layout'
 import Image from 'next/image'
 import find from 'lodash/find'
+import Link from 'next/link'
 
 export default function Home({projects}: any) {
   return (
@@ -58,8 +59,17 @@ export default function Home({projects}: any) {
                   👋
                 </span>
               </h1>
-              <h2 className="opacity-90">
+              <h2 className="opacity-90 max-w-lg pt-1">
                 I'm a web designer, creative helper, and front-end developer.
+                Currently working on{' '}
+                <Link
+                  target="_blank"
+                  className="underline"
+                  href="https://badass.dev"
+                >
+                  @badass.dev
+                </Link>
+                .
               </h2>
             </div>
           </div>
