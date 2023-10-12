@@ -1,5 +1,11 @@
 [
   {
+    "title": "EpicWeb.dev",
+    "url": "https://epicweb.dev",
+    "image": "/projects/epic-web/logo.svg",
+    "cursor": "/projects/epic-web/cursor.svg"
+  },
+  {
     "title": "TotalTypescript.com",
     "url": "https://totaltypescript.com",
     "image": "/projects/total-typescript/logo.svg",
@@ -9,7 +15,19 @@
     "title": "TestingAccessibility.com",
     "url": "https://testingaccessibility.com",
     "image": "/projects/testing-accessibility/logo.svg",
-    "cursor": "/projects/testing-accessibility/cursor.svg"
+    "cursor": "/projects/testing-accessibility/cursor.svg",
+    "links": [
+      {
+        "label": "Case Study",
+        "url": "https://badass.dev/partners/testing-accessibility"
+      }
+    ]
+  },
+  {
+    "title": "egghead.io",
+    "url": "https://egghead.io",
+    "image": "/projects/egghead/logo.svg",
+    "cursor": "/projects/egghead/cursor.svg"
   },
   {
     "title": "JustJavaScript.com",
@@ -19,7 +37,7 @@
     "links": [
       {
         "label": "Case study",
-        "url": "https://www.skillrecordings.com/just-javascript"
+        "url": "https://badass.dev/partners/just-javascript"
       }
     ]
   },
@@ -31,7 +49,7 @@
     "links": [
       {
         "label": "Case study",
-        "url": "https://www.skillrecordings.com/epic-react"
+        "url": "https://badass.dev/partners/epic-react"
       }
     ]
   },
@@ -43,7 +61,7 @@
     "links": [
       {
         "label": "Case study",
-        "url": "https://www.skillrecordings.com/technical-interviews"
+        "url": "https://badass.dev/partners/technical-interviews"
       }
     ]
   },
@@ -60,45 +78,9 @@
     "cursor": "/projects/pro-tailwind/cursor.svg"
   },
   {
-    "title": "TypeScriptCourse.com",
-    "url": "https://typescriptcourse.com",
-    "image": "/projects/typescript-course/logo.svg",
-    "cursor": "/projects/typescript-course/cursor.svg"
-  },
-  {
-    "title": "egghead.io",
-    "url": "https://egghead.io",
-    "image": "/projects/egghead/logo.svg",
-    "cursor": "/projects/egghead/cursor.svg"
-  },
-  {
-    "title": "KeyboardLegend.dev",
-    "url": "https://keyboardlegend.dev",
-    "image": "/projects/keyboard-legend/logo.svg",
-    "cursor": "/projects/keyboard-legend/cursor.svg"
-  },
-  {
-    "title": "CSSDestructured.com",
-    "url": "https://cssdestructured.com",
-    "image": "/projects/css-destructured/logo.svg",
-    "cursor": "/projects/css-destructured/cursor.svg"
-  },
-  {
     "title": "EngManagement.dev",
     "url": "https://engmanagement.dev",
     "image": "/projects/engineering-management/logo.svg",
     "cursor": "/projects/engineering-management/cursor.svg"
-  },
-  {
-    "title": "EnterpriseJamstack.com",
-    "url": "https://enterprisejamstack.com",
-    "image": "/projects/enterprise-jamstack/logo.svg",
-    "cursor": "/projects/enterprise-jamstack/cursor.svg"
-  },
-  {
-    "title": "GraphQLWorkshop.com",
-    "url": "https://graphqlworkshop.com",
-    "image": "/projects/graphql-workshop/logo.svg",
-    "cursor": "/projects/graphql-workshop/cursor.svg"
   }
 ]
