@@ -67,7 +67,7 @@ export default function Home({projects}: any) {
                   className="underline"
                   href="https://badass.dev"
                 >
-                  @badass.dev
+                  badass.dev
                 </Link>
                 .
               </h2>
