@@ -3,6 +3,7 @@ import Layout from 'components/layout'
 import Image from 'next/image'
 import {CloudinaryAsset} from 'types'
 import Head from 'next/head'
+import toast from 'react-hot-toast'
 
 type TemplateProps = {
   shot: CloudinaryAsset
@@ -24,6 +25,11 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
     })
   }, [])
 
+  const originalUrl =
+    shot.resource_type === 'video'
+      ? shot.secure_url.replace('.mov', '.mp4')
+      : shot.secure_url
+
   return (
     <Layout
       className="bg-black"
@@ -32,16 +38,25 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
         title: 'screenshot',
         description: ' ',
         type: shot.resource_type === 'video' ? 'video.movie' : 'website',
-        hasOgImage: false,
-        // ogImage: {
-        //   url: shot.secure_url,
-        // },
+        ogImage: {
+          url: shot.secure_url,
+        },
         titleAppendSiteName: false,
       }}
     >
-      <main className="flex items-center justify-center flex-col w-full min-h-screen p-16">
+      <main className="flex items-center justify-center flex-col w-full min-h-screen sm:p-16 p-1">
         <div className="fixed font-mono bottom-5 right-5 text-xs">
-          {visitCount}
+          {visitCount} |{' '}
+          <button
+            type="button"
+            onClick={() => {
+              return navigator.clipboard.writeText(originalUrl).then(() => {
+                toast.success('Copied to clipboard')
+              })
+            }}
+          >
+            🔗
+          </button>
         </div>
         {shot.resource_type === 'video' ? (
           <>
@@ -56,15 +71,10 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
             <Head>
               <meta
                 property="og:video"
-                content={shot.secure_url}
-                // content={shot.secure_url.replace('.mov', '.mp4')}
-              />
-              <meta property="og:video:type" content="video/quicktime" />
-              {/* <meta property="og:video:type" content="video/mp4" /> */}
-              {/* <meta
-                property="og:url"
                 content={shot.secure_url.replace('.mov', '.mp4')}
-              /> */}
+              />
+
+              <meta property="og:video:type" content="video/mp4" />
             </Head>
           </>
         ) : (
