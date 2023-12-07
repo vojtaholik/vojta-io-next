@@ -102,7 +102,7 @@ const ShotTemplate: React.FC<React.PropsWithChildren<TemplateProps>> = ({
 
 export default ShotTemplate
 
-function calculateAspectRatio(width: number, height: number) {
+export function calculateAspectRatio(width: number, height: number) {
   const aspectRatio = width / height
   return aspectRatio.toFixed(1)
 }

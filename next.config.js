@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
   options: {
@@ -8,9 +7,7 @@ const withMDX = require('@next/mdx')({
 
 const IMAGE_HOST_DOMAINS = [`res.cloudinary.com`]
 
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
   eslint: {ignoreDuringBuilds: true},
@@ -18,7 +15,10 @@ const nextConfig = {
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
   images: {
-    domains: IMAGE_HOST_DOMAINS,
+    remotePatterns: IMAGE_HOST_DOMAINS.map((domain) => ({
+      protocol: 'https',
+      hostname: domain,
+    })),
   },
   async redirects() {
     return []

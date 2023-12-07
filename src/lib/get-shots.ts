@@ -31,3 +31,20 @@ export const getShot = async (id: string) => {
 
   return shot
 }
+
+export const getShots = async (count?: number) => {
+  let shots
+  try {
+    shots = await cloudinary.v2.search
+      .expression(`folder:screenshots/*`)
+      .max_results(count || 100)
+      .execute()
+      .then((result) => {
+        return result.resources
+      })
+  } catch (error) {
+    console.info(error)
+  }
+
+  return shots
+}
