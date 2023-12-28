@@ -1,6 +1,4 @@
-// getServerSidProps
-
-import {getShot} from 'lib/get-shots'
+import {getShot} from 'lib/shots'
 import {GetServerSideProps} from 'next'
 import path from 'path'
 import ShotTemplate from 'templates/shot-template'

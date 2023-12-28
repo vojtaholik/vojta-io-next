@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {getProjects, Project} from 'lib/get-projects'
+import {getProjects, Project} from 'lib/projects'
 import {GetStaticPropsContext} from 'next'
 import {Sound} from 'components/icons'
 import {links} from 'components/bio'

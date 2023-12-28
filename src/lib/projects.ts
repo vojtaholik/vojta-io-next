@@ -6,7 +6,7 @@ type Link = {
   url: string
 }
 
-export interface Project {
+export type Project = {
   title: string
   url: string
   image: string
@@ -14,7 +14,7 @@ export interface Project {
   links?: Link[]
 }
 
-export interface Projects {
+export type Projects = {
   projects: Project[]
 }
 
