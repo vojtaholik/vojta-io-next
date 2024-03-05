@@ -1,23 +1,32 @@
 import ProjectsJson from '../../public/projects/projects.json'
-import memoize from 'memoizee'
+import z from 'zod'
 
-type Link = {
-  label: string
-  url: string
-}
+const ProjectSchema = z.object({
+  title: z.string(),
+  url: z.string(),
+  slug: z.string(),
+  image: z.string(),
+  cursor: z.string(),
+  links: z.array(z.object({label: z.string(), url: z.string()})).optional(),
+  resources: z.array(z.any()).optional(),
+})
 
-export type Project = {
-  title: string
-  url: string
-  image: string
-  cursor: string
-  links?: Link[]
-}
+const ProjectsSchema = z.array(ProjectSchema)
+export type Project = z.infer<typeof ProjectSchema>
 
 export type Projects = {
   projects: Project[]
 }
 
-export const getProjects = memoize(() => {
-  return ProjectsJson
-})
+export const getProjects = () => {
+  return ProjectsSchema.parse(ProjectsJson)
+}
+
+export const getProject = (slug: string) => {
+  const projects = ProjectsSchema.parse(ProjectsJson)
+  const project = projects.find((project) => project.slug === slug)
+  if (!project) {
+    throw new Error(`Project with slug "${slug}" not found`)
+  }
+  return ProjectSchema.parse(project)
+}

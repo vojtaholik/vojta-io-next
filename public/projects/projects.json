@@ -1,18 +1,68 @@
 [
   {
     "title": "EpicWeb.dev",
+    "slug": "epic-web-dev",
     "url": "https://epicweb.dev",
-    "image": "/projects/epic-web/logo.svg",
-    "cursor": "/projects/epic-web/cursor.svg"
+    "image": "/projects/epic-web-dev/logo.svg",
+    "cursor": "/projects/epic-web-dev/cursor.svg",
+    "resources": [
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704210493/1-mobile_2x.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200065/projects/epic-web-dev/image-1.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200064/projects/epic-web-dev/image_30_2x_ixk4c4.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200064/projects/epic-web-dev/image_31_2x_omjsuw.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200063/projects/epic-web-dev/image_35_2x_fianmd.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200063/projects/epic-web-dev/image_36_2x_srkx5n.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200063/projects/epic-web-dev/image_34_2x_eptbiv.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200063/projects/epic-web-dev/image_33_2x_gbjhjp.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200062/projects/epic-web-dev/image_38_2x_oypvpo.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200062/projects/epic-web-dev/image_40_2x_tk0ypa.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200062/projects/epic-web-dev/image_40_2x_tk0ypa.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200062/projects/epic-web-dev/image_37_2x_gomn9b.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200061/projects/epic-web-dev/image_39_2x_fjvnfu.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200061/projects/epic-web-dev/workshop-upsell_1_2x_ly6oik.png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dyt2f8jwg/image/upload/v1704200061/projects/epic-web-dev/image_41_2x_gjpfey.png"
+      }
+    ]
   },
   {
     "title": "TotalTypescript.com",
+    "slug": "total-typescript",
     "url": "https://totaltypescript.com",
     "image": "/projects/total-typescript/logo.svg",
     "cursor": "/projects/total-typescript/cursor.svg"
   },
   {
     "title": "TestingAccessibility.com",
+    "slug": "testing-accessibility",
     "url": "https://testingaccessibility.com",
     "image": "/projects/testing-accessibility/logo.svg",
     "cursor": "/projects/testing-accessibility/cursor.svg",
@@ -25,12 +75,14 @@
   },
   {
     "title": "egghead.io",
+    "slug": "egghead",
     "url": "https://egghead.io",
     "image": "/projects/egghead/logo.svg",
     "cursor": "/projects/egghead/cursor.svg"
   },
   {
     "title": "JustJavaScript.com",
+    "slug": "just-javascript",
     "url": "https://justjavascript.com",
     "image": "/projects/just-javascript/logo.svg",
     "cursor": "/projects/just-javascript/cursor.svg",
@@ -43,6 +95,7 @@
   },
   {
     "title": "EpicReact.dev",
+    "slug": "epic-react",
     "url": "https://epicreact.dev",
     "image": "/projects/epic-react/logo.svg",
     "cursor": "/projects/epic-react/cursor.svg",
@@ -55,6 +108,7 @@
   },
   {
     "title": "TechnicalInterviews.dev",
+    "slug": "technical-interviews",
     "url": "https://technicalinterviews.dev",
     "image": "/projects/technical-interviews/logo.svg",
     "cursor": "/projects/technical-interviews/cursor.svg",
@@ -67,18 +121,21 @@
   },
   {
     "title": "ScriptKit.com",
+    "slug": "script-kit",
     "url": "https://scriptkit.com",
     "image": "/projects/script-kit/logo.svg",
     "cursor": "/projects/script-kit/cursor.svg"
   },
   {
     "title": "ProTailwind.com",
+    "slug": "pro-tailwind",
     "url": "https://protailwind.com",
     "image": "/projects/pro-tailwind/logo.svg",
     "cursor": "/projects/pro-tailwind/cursor.svg"
   },
   {
     "title": "EngManagement.dev",
+    "slug": "engineering-management",
     "url": "https://engmanagement.dev",
     "image": "/projects/engineering-management/logo.svg",
     "cursor": "/projects/engineering-management/cursor.svg"

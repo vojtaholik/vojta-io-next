@@ -1,5 +1,6 @@
 import {NextSeo} from 'next-seo'
 import * as React from 'react'
+import {cn} from 'utils/cn'
 
 type LayoutProps = {
   children?: React.ReactNode
@@ -29,7 +30,7 @@ const Layout: React.FC<LayoutProps> = ({
     date,
   } = meta || {}
   return (
-    <div className={`px-5 min-h-screen flex w-full ${className}`}>
+    <div className={cn('px-5 min-h-screen flex w-full', className)}>
       <NextSeo
         title={title}
         description={description}
@@ -46,7 +47,7 @@ const Layout: React.FC<LayoutProps> = ({
         }}
         twitter={{
           cardType: hasOgImage ? 'summary_large_image' : undefined,
-          handle: '@vjthlk',
+          handle: '@vojta_holik',
         }}
         canonical={url}
         noindex={noIndex}
