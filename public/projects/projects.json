@@ -58,7 +58,13 @@
     "slug": "total-typescript",
     "url": "https://totaltypescript.com",
     "image": "/projects/total-typescript/logo.svg",
-    "cursor": "/projects/total-typescript/cursor.svg"
+    "cursor": "/projects/total-typescript/cursor.svg",
+    "links": [
+      {
+        "label": "Case study",
+        "url": "https://badass.dev/partners/total-typescript"
+      }
+    ]
   },
   {
     "title": "TestingAccessibility.com",
