@@ -15,7 +15,7 @@ export default function Home({projects}: any) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col w-full max-w-screen-md mx-auto">
+      <div className="flex flex-col w-full max-w-screen-md mx-auto pb-16">
         <header className="sm:py-16 py-10">
           <div className="flex sm:space-x-8 space-x-4 sm:items-center items-start">
             <div className="flex items-center justify-center flex-shrink-0 sm:w-auto w-16 rounded-full overflow-hidden border-2 border-black/50">
