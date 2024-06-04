@@ -1,7 +1,6 @@
 export default {
-  title: 'Vojta — designer and front-end developer',
-  description:
-    'Vojta Holik is a web designer, creative helper, and front-end developer from Czech Republic.',
+  title: 'Vojta Holik — Design Engineer',
+  description: 'Vojta Holik is Design Engineer based in the Czech Republic.',
   additionalLinkTags: [
     {
       rel: 'icon',
