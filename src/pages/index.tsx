@@ -16,14 +16,14 @@ export default function Home({projects}: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col w-full max-w-screen-md mx-auto">
-        <header className="py-24">
-          <div className="flex space-x-4 items-center">
+        <header className="sm:py-16 py-10">
+          <div className="flex sm:space-x-8 space-x-4 sm:items-center items-start">
             <div className="flex items-center justify-center flex-shrink-0 sm:w-auto w-16 rounded-full overflow-hidden border-2 border-black/50">
               <Image
                 src={Me}
                 alt="Vojta Holik"
-                width={80}
-                height={80}
+                width={100}
+                height={100}
                 placeholder="blur"
                 className="rounded-full"
                 priority
@@ -70,9 +70,24 @@ export default function Home({projects}: any) {
                 </Link>
                 .
               </h2>
+              <div className="sm:flex grid grid-cols-2 -m-1 items-center w-full justify-center mt-3">
+                {links.map(({href, icon, label}) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="m-1 flex items-center justify-center space-x-2 rounded-lg bg-gray-200 bg-opacity-5 px-3 py-2 text-sm hover:bg-opacity-10 transition-all ease-in-out duration-200"
+                  >
+                    {icon}
+                    <span>{label}</span>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </header>
+
         <h3 className="pb-4 text-gray-300">
           Projects I've collaborated on in the past ~year:
         </h3>
@@ -108,20 +123,9 @@ export default function Home({projects}: any) {
             )
           })}
         </main>
-        <footer className="py-24 sm:flex grid grid-cols-2 -m-1 items-center w-full justify-center ">
-          {links.map(({href, icon, label}) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="m-1 flex items-center justify-center space-x-2 rounded-lg bg-gray-200 bg-opacity-5 px-3 py-2 text-sm hover:bg-opacity-10 transition-all ease-in-out duration-200"
-            >
-              {icon}
-              <span>{label}</span>
-            </a>
-          ))}
-        </footer>
+        {/* <footer className="py-24 sm:flex grid grid-cols-2 -m-1 items-center w-full justify-center">
+         
+        </footer> */}
       </div>
     </Layout>
   )
