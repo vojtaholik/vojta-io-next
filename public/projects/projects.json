@@ -80,6 +80,13 @@
     ]
   },
   {
+    "title": "ProAWS.dev",
+    "slug": "pro-aws",
+    "url": "https://proaws.dev",
+    "image": "/projects/pro-aws/logo.svg",
+    "cursor": "/projects/pro-aws/cursor.svg"
+  },
+  {
     "title": "egghead.io",
     "slug": "egghead",
     "url": "https://egghead.io",
@@ -138,12 +145,5 @@
     "url": "https://protailwind.com",
     "image": "/projects/pro-tailwind/logo.svg",
     "cursor": "/projects/pro-tailwind/cursor.svg"
-  },
-  {
-    "title": "EngManagement.dev",
-    "slug": "engineering-management",
-    "url": "https://engmanagement.dev",
-    "image": "/projects/engineering-management/logo.svg",
-    "cursor": "/projects/engineering-management/cursor.svg"
   }
 ]

@@ -60,7 +60,7 @@ export default function Home({projects}: any) {
                 </span>
               </h1>
               <h2 className="opacity-90 max-w-lg pt-1">
-                Design Engineer — currently working on{' '}
+                Design Engineer currently working on{' '}
                 <Link
                   target="_blank"
                   className="underline"
