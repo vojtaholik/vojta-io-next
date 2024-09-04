@@ -240,7 +240,7 @@ export default function Home({projects}: {projects: Project[]}) {
         version="1.1"
         viewBox="0 0 700 700"
         preserveAspectRatio="xMidYMid slice"
-        className="sm:fixed hidden w-full h-full bg-cover left-0 select-none pointer-events-none z-0"
+        className="fixed sm:visible invisible w-full h-full bg-cover left-0 select-none pointer-events-none z-0"
         opacity="0.5"
       >
         <defs>
