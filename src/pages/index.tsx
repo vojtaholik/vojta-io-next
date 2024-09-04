@@ -110,7 +110,7 @@ export default function Home({projects}: {projects: Project[]}) {
       <section className="grid sm:grid-cols-2 grid-cols-1 gap-x-10 gap-y-16">
         {projects.slice(0, 4).map((project) => {
           return (
-            <article className="" key={project.title}>
+            <article className="flex flex-col" key={project.title}>
               {project.thumbnail && (
                 <Link
                   className="flex items-center justify-center relative mb-5"
@@ -145,7 +145,7 @@ export default function Home({projects}: {projects: Project[]}) {
                 </Link>
               </h3>
               {project.description && (
-                <Markdown className="prose mt-3 mb-5 prose-p:opacity-90 sm:prose-lg">
+                <Markdown className="prose mt-3 mb-6 prose-p:opacity-90 flex-grow sm:prose-lg">
                   {project.description}
                 </Markdown>
               )}

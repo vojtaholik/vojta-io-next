@@ -6,7 +6,7 @@
     "thumbnail": "/projects/total-typescript/thumb.png",
     "image": "/projects/total-typescript/logo.svg",
     "cursor": "/projects/total-typescript/cursor.svg",
-    "description": "Total TypeScript is a comprehensive production-grade TypeScript training taught by [Matt Pocock](https://x.com/mattpocockuk).\n\nIn 2022, I took a crucial part in designing and developing the web experience. Since then, Total TypeScript crossed [$2.5M in sales](https://x.com/mattpocockuk/status/1812771775928734134).",
+    "description": "Total TypeScript is a comprehensive production-grade TypeScript training taught by [Matt Pocock](https://x.com/mattpocockuk).\n\nIn 2022, I played a key role in designing and developing the web experience, and since then, Total TypeScript has crossed [$2.5M in sales](https://x.com/mattpocockuk/status/1812771775928734134).",
     "links": [
       {
         "label": "TotalTypeScript.com",
@@ -25,7 +25,7 @@
     "image": "/projects/epic-web-dev/logo.svg",
     "cursor": "/projects/epic-web-dev/cursor.svg",
     "thumbnail": "/projects/epic-web-dev/thumb.png",
-    "description": "Epic React is a series of self-paced workshops, tutorials and articles by [Kent C. Dodds](https://x.com/kentcdodds).\n\nIn 2020 when Epic React first launched it quickly became the go-to place to learn React. I took a crucial part in designing and developing the learning experience that generated **over $1M in sales** in just first month of launch.",
+    "description": "Epic React is a series of self-paced workshops, tutorials and articles by [Kent C. Dodds](https://x.com/kentcdodds).\n\nWhen it first launched in 2020, it quickly became the go-to resource for learning React. I played a key role in designing and developing the learning experience, which generated **over $1M in sales** in its first month.",
     "links": [
       {
         "label": "EpicWeb.dev",
@@ -95,7 +95,7 @@
     "image": "/projects/just-javascript/logo.svg",
     "cursor": "/projects/just-javascript/cursor.svg",
     "thumbnail": "/projects/just-javascript/thumb4.png",
-    "description": "Just JavaScript by [Dan Abramov](https://bsky.app/profile/danabra.mov) and [Maggie Appleton](https://maggieappleton.com/) is a unique interactive learning environment based around explorable explanations.\n\nWorking with Dan and Maggie has been amazing. I’m especially proud of the interactive quizzing experience driven by state machines.",
+    "description": "Just JavaScript by [Dan Abramov](https://bsky.app/profile/danabra.mov) and [Maggie Appleton](https://maggieappleton.com/) is a unique interactive learning environment based around explorable explanations.\n\nWorking with Dan and Maggie has been great. I’m particularly proud of the interactive quizzing feature powered by state machines.",
     "links": [
       {
         "label": "JustJavaScript.com",
@@ -114,7 +114,7 @@
     "image": "/projects/testing-accessibility/logo.svg",
     "cursor": "/projects/testing-accessibility/cursor.svg",
     "thumbnail": "/projects/testing-accessibility/thumb.png",
-    "description": "Testing Accessibility is a comprehensive accessibility training for shipping high-quality web applications taught by [Marcy Sutton](https://marcysutton.com/).",
+    "description": "Testing Accessibility is a comprehensive accessibility training for shipping high-quality web applications taught by [Marcy Sutton](https://marcysutton.com/).\n\nA11Y plays a key role in the web development process, and I’m proud to have worked on this project with Marcy.",
     "links": [
       {
         "label": "TestingAccessibility.com",
