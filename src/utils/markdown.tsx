@@ -14,7 +14,12 @@ export const Markdown = ({
       components={{
         a: (props) => {
           return props.href ? (
-            <Link href={props.href} target="_blank" rel="noopener noreferrer">
+            <Link
+              href={props.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium"
+            >
               {props.children}
             </Link>
           ) : null
