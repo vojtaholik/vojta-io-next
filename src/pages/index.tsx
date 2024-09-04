@@ -213,7 +213,15 @@ export default function Home({projects}: {projects: Project[]}) {
               rel="noopener noreferrer"
               className=""
             >
-              © GitHub
+              ► GitHub
+            </Link>
+            <Link
+              href="https://dribbble.com/vjthlk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
+              ▲ Dribbble
             </Link>
           </div>
         </div>
