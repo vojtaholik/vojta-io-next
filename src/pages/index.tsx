@@ -32,13 +32,13 @@ const H2 = ({className}: {className?: string}) => {
 export default function Home({projects}: {projects: Project[]}) {
   return (
     <Layout
-      className="flex flex-col max-w-screen-lg overflow-hidden mx-auto w-full pb-24"
+      className="flex flex-col max-w-screen-lg overflow-hidden mx-auto w-full sm:pb-24 pb-32"
       meta={{titleAppendSiteName: false}}
     >
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="w-full sm:py-24 py-5 flex md:flex-row flex-col items-start justify-between">
+      <header className="w-full sm:py-24 py-8 flex md:flex-row flex-col items-start justify-between">
         <div className="max-w-lg flex flex-col h-full justify-between">
           <div>
             <svg
@@ -145,7 +145,7 @@ export default function Home({projects}: {projects: Project[]}) {
                 </Link>
               </h3>
               {project.description && (
-                <Markdown className="prose mt-3 mb-6 prose-p:opacity-90 flex-grow sm:prose-lg">
+                <Markdown className="prose mt-3 mb-6 prose-p:opacity-90 flex-grow sm:prose-lg prose-sm">
                   {project.description}
                 </Markdown>
               )}
@@ -156,12 +156,12 @@ export default function Home({projects}: {projects: Project[]}) {
                       <Link
                         href={link.url}
                         key={link.url}
-                        className="inline-flex group sm:text-lg font-normal no-underline items-center gap-1.5"
+                        className="inline-flex group sm:text-lg text-sm font-normal no-underline items-center gap-1.5"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <span className="font-pixel size-5 group-hover:bg-foreground/100 transition bg-foreground/20 text-background flex items-center justify-center">
-                          <span className="relative translate-x-[1px]">↗︎</span>
+                        <span className="font-pixel size-5 text-xl sm:text-base group-hover:bg-foreground/100 transition bg-foreground/20 text-background flex items-center justify-center">
+                          <span className="relative translate-x-[1px]">↗</span>
                         </span>
                         <span className="underline decoration-white/20">
                           {link.label}
@@ -177,7 +177,7 @@ export default function Home({projects}: {projects: Project[]}) {
       </section>
       <section className="mt-20 relative pt-16 sm:border-t flex items-start justify-between w-full border-white/5">
         <div className="w-full">
-          <Markdown className="sm:text-xl sm:max-w-xl text-base max-w-sm text-balance prose-p:leading-relaxed">
+          <Markdown className="sm:text-xl sm:max-w-xl text-sm max-w-sm text-balance prose-p:leading-relaxed">
             {
               'Over the past decade I’ve been part of the [egghead.io](https://egghead.io) team ran by [Joel Hooks](https://x.com/jhooks). I also helped out [John Lindquist](https://x.com/johnlindquist) with [ScriptKit](https://scriptkit.com/).'
             }
@@ -190,20 +190,20 @@ export default function Home({projects}: {projects: Project[]}) {
             priority
             className="mix-blend-lighten sm:static absolute -top-14 opacity-20 my-5"
           />
-          <Markdown className="relative z-10 sm:text-xl sm:max-w-xl text-base max-w-sm text-balance prose-p:leading-relaxed sm:mt-0 mt-20">
+          <Markdown className="relative z-10 sm:text-xl sm:max-w-xl text-sm max-w-sm text-balance prose-p:leading-relaxed sm:mt-0 mt-16">
             {
               'Majority of projects I work on have visible source, see [activity on my GitHub](https://github.com/vojtaholik).'
             }
           </Markdown>
-          <div className="flex mt-28 w-full items-center gap-8 flex-row sm:static absolute -bottom-16 font-pixel sm:text-sm text-xs uppercase">
-            <Link href="mailto:vojta@holik.dev" className="">
+          <div className="flex mt-28 w-full items-center sm:gap-x-8 gap-x-6 gap-y-4 flex-row flex-wrap sm:static absolute -bottom-20 opacity-90 font-pixel sm:text-sm text-[10px] uppercase">
+            <Link href="mailto:vojta@holik.dev" className="flex-shrink-0">
               @ e-mail
             </Link>
             <Link
               href="https://x.com/vojta_holik"
               target="_blank"
               rel="noopener noreferrer"
-              className=""
+              className="flex-shrink-0"
             >
               X (Twitter)
             </Link>
@@ -211,7 +211,7 @@ export default function Home({projects}: {projects: Project[]}) {
               href="https://github.com/vojtaholik"
               target="_blank"
               rel="noopener noreferrer"
-              className=""
+              className="flex-shrink-0"
             >
               ► GitHub
             </Link>
@@ -219,7 +219,7 @@ export default function Home({projects}: {projects: Project[]}) {
               href="https://dribbble.com/vjthlk"
               target="_blank"
               rel="noopener noreferrer"
-              className=""
+              className="flex-shrink-0"
             >
               ▲ Dribbble
             </Link>
@@ -228,7 +228,7 @@ export default function Home({projects}: {projects: Project[]}) {
         <Image
           src={require('../../public/praise.png')}
           alt="Praise"
-          className="mix-blend-lighten sm:static  sm:w-auto w-56 sm:mr-0 -mr-5"
+          className="mix-blend-lighten sm:static  sm:w-auto w-56 sm:mr-0 -mr-16"
           width={350}
           quality={100}
           priority
@@ -240,7 +240,7 @@ export default function Home({projects}: {projects: Project[]}) {
         version="1.1"
         viewBox="0 0 700 700"
         preserveAspectRatio="xMidYMid slice"
-        className="fixed w-full h-full bg-cover left-0 select-none pointer-events-none z-0"
+        className="sm:fixed hidden w-full h-full bg-cover left-0 select-none pointer-events-none z-0"
         opacity="0.5"
       >
         <defs>
