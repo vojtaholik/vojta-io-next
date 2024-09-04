@@ -5,6 +5,7 @@ import {DefaultSeo} from 'next-seo'
 import SEO from '../../config'
 import {MDXProvider} from '@mdx-js/react'
 import {Toaster} from 'react-hot-toast'
+import {maisonNeue, maisonNeueMono, departureMono} from 'utils/load-fonts'
 
 function MyApp({Component, pageProps}: AppProps) {
   return (
@@ -12,7 +13,11 @@ function MyApp({Component, pageProps}: AppProps) {
       <DefaultSeo {...SEO} />
       <MDXProvider>
         <Toaster position="top-center" />
-        <Component {...pageProps} />
+        <main
+          className={`${maisonNeue.variable} ${maisonNeueMono.variable} ${departureMono.variable} font-sans font-light`}
+        >
+          <Component {...pageProps} />
+        </main>
       </MDXProvider>
     </>
   )

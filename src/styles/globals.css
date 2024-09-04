@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-#root {
-  color-scheme: dark;
+@layer base {
+  :root {
+    --background: 0 0% 13%;
+    --foreground: 0 0% 93%;
+    color-scheme: dark;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-normal antialiased;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+  a {
+    @apply underline decoration-white/20 hover:decoration-white/100 transition ease-in-out underline-offset-4;
+  }
 }

@@ -7,6 +7,8 @@ const ProjectSchema = z.object({
   slug: z.string(),
   image: z.string(),
   cursor: z.string(),
+  thumbnail: z.string().optional().nullable(),
+  description: z.string().optional().nullable(),
   links: z.array(z.object({label: z.string(), url: z.string()})).optional(),
   resources: z.array(z.any()).optional(),
 })

@@ -17,7 +17,7 @@ const Layout: React.FC<LayoutProps> = ({
 }) => {
   const {
     title,
-    description,
+    description = 'Vojta is a Design Engineer',
     titleAppendSiteName = true,
     url,
     type = 'website',
@@ -30,7 +30,7 @@ const Layout: React.FC<LayoutProps> = ({
     date,
   } = meta || {}
   return (
-    <div className={cn('px-5 min-h-screen flex w-full', className)}>
+    <div className={cn(`px-5 min-h-screen flex w-full`, className)}>
       <NextSeo
         title={title}
         description={description}
