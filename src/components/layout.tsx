@@ -1,6 +1,7 @@
 import {NextSeo} from 'next-seo'
 import * as React from 'react'
 import {cn} from 'utils/cn'
+import {Analytics} from '@vercel/analytics/react'
 
 type LayoutProps = {
   children?: React.ReactNode
@@ -53,6 +54,7 @@ const Layout: React.FC<LayoutProps> = ({
         noindex={noIndex}
       />
       {children}
+      <Analytics />
     </div>
   )
 }
