@@ -124,14 +124,14 @@ export default function Home({projects}: {projects: Project[]}) {
                     width={513 * 2}
                     height={331 * 2}
                     alt={project.title}
-                    className="aspect-[513/331] saturate-0 transition border border-white/5"
+                    className="aspect-[513/331] hover:saturate-100 saturate-0 duration-500 ease-out transition border border-white/5"
                     quality={100}
                     priority
                   />
-                  <div
+                  {/* <div
                     className="bg-white hover:opacity-15 opacity-0 duration-300 transition ease-in-out absolute inset-0 mix-blend-overlay"
                     aria-hidden="true"
-                  />
+                  /> */}
                 </Link>
               )}
               <h3 className="font-medium text-2xl">
