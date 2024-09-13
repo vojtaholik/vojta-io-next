@@ -234,7 +234,7 @@ export default function Home({projects}: {projects: Project[]}) {
           priority
         />
       </section>
-      <svg
+      {/* <svg
         // generated on https://www.fffuel.co/nnnoise/
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
@@ -288,7 +288,7 @@ export default function Home({projects}: {projects: Project[]}) {
           fill="#ffffff"
           filter="url(#nnnoise-filter)"
         ></rect>
-      </svg>
+      </svg> */}
     </Layout>
   )
 }
