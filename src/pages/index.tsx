@@ -200,12 +200,20 @@ export default function Home({projects}: {projects: Project[]}) {
               @ e-mail
             </Link>
             <Link
+              href="https://bsky.app/profile/vojta.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0"
+            >
+              ⋈ BlueSky
+            </Link>
+            <Link
               href="https://x.com/vojta_holik"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0"
             >
-              X (Twitter)
+              X Twitter
             </Link>
             <Link
               href="https://github.com/vojtaholik"
